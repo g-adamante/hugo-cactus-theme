@@ -4,7 +4,9 @@
     {{ partial "head.html" . }}
     </head>
 <body>
-    {{ partial "nav.html" . }}
+    <section id="navigator" style="padding-bottom:50px;">
+                {{ partial "nav.html" . }}
+                </section>
     <section id="wrapper">
         {{ block "profile" . }}{{ end }}
         {{ block "main" . -}}{{- end }}
